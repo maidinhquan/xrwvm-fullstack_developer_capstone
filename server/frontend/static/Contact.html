@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body { background: #f7f9fc; }
+    .contact-layout { max-width: 1100px; margin: 45px auto; padding: 0 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start; }
+    .contact-card { background: #fff; padding: 28px; border-radius: 12px; box-shadow: 0 5px 22px rgba(0,0,0,.07); }
+    .contact-card h1 { margin-bottom: 18px; }
+    .contact-card p { line-height: 1.7; }
+    .contact-images { display: flex; flex-direction: column; gap: 14px; }
+    .contact-images img { width: 100%; margin: 0; max-height: 320px; object-fit: cover; border-radius: 12px; }
+    @media (max-width: 740px) { .contact-layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; min-height: 84px;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="/">Dealerships</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="contact-layout">
+    <section class="contact-card">
+      <h1>Contact Us</h1>
+      <p>Have a question about a dealership or a vehicle review? Our customer service team can help you find information and understand the next steps.</p>
+      <p><strong>Email:</strong> <a href="mailto:support@bestcarsdealership.example">support@bestcarsdealership.example</a></p>
+      <p><strong>Phone:</strong> +1 (555) 010-2040</p>
+      <p><strong>Office:</strong> 125 Market Street, Suite 200, San Francisco, CA 94105, USA</p>
+      <p><strong>Hours:</strong> Monday–Friday, 9:00 AM–6:00 PM</p>
+      <small class="text-muted">Sample contact details for an educational capstone, not a real dealership service.</small>
+    </section>
+    <aside class="contact-images" aria-label="Car dealership and contact illustrations">
+      <img src="/static/contactus.png" alt="Contact our car dealership customer service team">
+      <img src="/static/cars.jpeg" alt="Cars available through dealerships">
+    </aside>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
